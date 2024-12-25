@@ -32,7 +32,7 @@ function App() {
             )}
           </div>
         </AnimatePresence>
-        <div className="hidden lg:flex lg:flex-1 bg-edu-pattern overflow-hidden">
+        <div className="hidden lg:flex lg:flex-1 overflow-hidden" style={backgroundStyle}>
           <OwlSide/>
           <TigerSide/>
         </div>
