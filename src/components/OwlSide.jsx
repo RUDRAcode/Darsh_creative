@@ -39,7 +39,7 @@ export default function OwlSide({ setOpen }) {
         className="w-[26rem] h-[34rem] flex flex-col justify-between z-10 p-3 relative  lg:h-[34rem] ssm:w-[21rem] ssm:h-[30rem]"
       >
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col">
-          <div className="w-96 h-96  absolute left-[4%] p-2 -top-[22%] ssm:w-[18rem] ssm:h-[18rem] ssm:left-[7%] ssm:top-[-11%]">
+          <div className="w-96 h-96  absolute left-[4%] p-2 -top-[22%] ssm:w-[15rem] ssm:h-[15rem] ssm:left-[14%] ssm:top-[-1%]">
             <div className="w-full h-full rounded-full bg-bg-borderColor p-3 overflow-hidden">
               <div className="w-full h-full rounded-full">
                 <img src={Owl} className="rounded-full" />

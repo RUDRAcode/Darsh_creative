@@ -4,10 +4,10 @@ export default function Navbar() {
   const [show,setShow]=useState(false)
   return (
     <>
-      <div className="w-full h-20 bg-bg-gradientVioletNav px-3">
+      <div className="w-full h-20 bg-bg-gradientVioletNav px-3 ssm:h-12">
         <div className="w-full h-full flex items-center justify-between">
-          <div className="h-full flex items-center w-[24rem] lg:justify-end">
-            <span className="text-4xl font-poppins text-white tracking-wider">
+          <div className="h-full flex items-center w-96 lg:justify-end">
+            <span className="text-4xl font-poppins text-white tracking-wider ssm:text-2xl">
               Darsh Creative Pvt Ltd.
             </span>
           </div>
@@ -91,9 +91,9 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className="w-20 h-full px-3 py-4 cursor-pointer" onClick={()=>setShow(!show)}>
+          <div className="w-20 h-full px-3 py-4 cursor-pointer ssm:py-1" onClick={()=>setShow(!show)}>
             <div className="w-full h-full flex justify-center items-center bg-bg-HamburgerMenu shadow-lg shadow-black">
-              <span className="text-3xl text-white">
+              <span className="text-3xl text-white ssm:text-2xl">
                 <i class="fa-solid fa-bars"></i>
               </span>
             </div>
