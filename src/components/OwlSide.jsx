@@ -11,19 +11,19 @@ export default function OwlSide({ setOpen }) {
       exit={{ opacity: 0, x: 100 }}
       transition={{ type: "spring", stiffness: 200 }}
     >
-      <div className="w-[26rem] h-[34rem] flex flex-col justify-between z-10 p-3 relative  lg:h-[34rem]">
+      <div className="w-[26rem] h-[34rem] flex flex-col justify-between z-10 p-3 relative  lg:h-[34rem] ssm:w-[21rem] ssm:h-[30rem]">
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col">
-          <div className="w-96 h-96  absolute left-[4%] p-2 -top-[22%]">
+          <div className="w-96 h-96  absolute left-[4%] p-2 -top-[22%] ssm:w-[18rem] ssm:h-[18rem] ssm:left-[7%] ssm:top-[-16%]">
             <div className="w-full h-full rounded-full bg-bg-borderColor p-3 overflow-hidden">
               <div className="w-full h-full rounded-full">
                 <img src={Owl} className="rounded-full" />
               </div>
             </div>
           </div>
-          <div className="w-full h-60" />
+          <div className="w-full h-60 ssm:h-52"/>
           <div className="w-full h-[39%] p-4">
             <div className="w-full h-full flex flex-col">
-              <span className="text-7xl text-center text-violet-700 font-roboto -m-1">
+              <span className="text-7xl text-center text-violet-700 font-roboto -m-1 ssm:text-6xl">
                 DISCOVER
               </span>
               <span className="text-5xl text-center text-violet-700 font-roboto ">
@@ -35,15 +35,15 @@ export default function OwlSide({ setOpen }) {
             </div>
           </div>
           <div className="flex-1 px-3 flex items-end">
-            <div className="w-full h-20 bg-buttonViolet rounded-full flex justify-between p-2">
+            <div className="w-full h-20 bg-buttonViolet rounded-full flex justify-between p-2 ssm:h-16">
               <div className="w-16 h-full bg-bg-JoinNowButton rounded-full flex items-center justify-center">
                 <span className="text-3xl text-white">
                   <i class="fa-solid fa-play"></i>
                 </span>
               </div>
               <a href="https://www.instaowl.in/" target="_blank">
-                <div className="w-72 h-full flex justify-center items-center cursor-pointer">
-                  <span className="font-bold text-[2.6rem] text-white">
+                <div className="w-72 h-full flex justify-center items-center cursor-pointer ssm:w-56">
+                  <span className="font-bold text-[2.6rem] text-white ssm:text-4xl">
                     JOIN NOW !
                   </span>
                 </div>

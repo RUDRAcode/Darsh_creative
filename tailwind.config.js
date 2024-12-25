@@ -15,6 +15,7 @@ export default {
         tablet: "896px",
         xl:"1144px",
         big: "1608px",
+        ssm:"300px"
       },
       colors: {
         blackBLue: "#0e1a34",
