@@ -14,6 +14,10 @@ export default function TigerSide({ setOpen }) {
   const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
 
   const onTouchEnd = (e) => {
+    const width=window.innerWidth
+    if (width >= 1024){
+      return
+    }
     if (!touchStart || !touchEnd) return;
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipe;
