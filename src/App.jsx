@@ -16,15 +16,15 @@ function App() {
     backgroundSize: 'cover',  
     backgroundRepeat: 'no-repeat', 
     backgroundPosition: 'center', 
-    height: '100vh', 
+    height: '100%', 
     width: '100%', 
   }
   return (
     <>
-      <div className="w-full h-svh flex flex-col relative">
+      <div className="w-full h-svh flex flex-col relative overflow-hidden">
       <Navbar/>
         <AnimatePresence>
-          <div className="flex-1 lg:hidden"style={backgroundStyle}>
+          <div className="min-h-[30rem]  lg:hidden"style={backgroundStyle}>
             {open ? (
               <OwlSide setOpen={setOpen}  />
             ) : (
@@ -32,7 +32,7 @@ function App() {
             )}
           </div>
         </AnimatePresence>
-        <div className="hidden lg:flex lg:flex-1 overflow-hidden" style={backgroundStyle}>
+        <div className="hidden lg:flex lg:min-h-[37rem]" style={backgroundStyle}>
           <OwlSide/>
           <TigerSide/>
         </div>

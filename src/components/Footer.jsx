@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full h-20 bg-bg-gradientVioletNav px-2 flex justify-between lg:px-10">
+    <footer className="w-full min-h-20 bg-bg-gradientVioletNav  px-2 flex justify-between lg:px-10">
       <div className="flex-1 flex items-center justify-center">
         <div className="min-w-[25rem] h-1/2 bg-bg-pinkToViolet rounded-3xl flex justify-between items-center px-1 md:min-w-[30rem] md:px-2 lg:min-w-[45rem] lg:px-3 sm:min-w-[25rem] ssm:min-w-[19rem]">
           <div className="h-full w-12 flex items-center justify-between lg:w-16 md:flex ssm:hidden">
