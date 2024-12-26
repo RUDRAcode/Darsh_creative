@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="w-full h-20 bg-bg-gradientVioletNav px-3 ssm:h-12  sm:h-[6rem] ">
         <div className="w-full h-full flex items-center justify-between">
           <div className="h-full flex items-center w-96 lg:justify-end">
-            <span className="text-4xl font-poppins text-white tracking-wider ssm:text-2xl sm:text-4xl">
+            <span className="text-xl font-poppins text-white tracking-wider sm:text-4xl">
               Darsh Creative Pvt Ltd.
             </span>
           </div>
