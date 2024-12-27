@@ -6,9 +6,9 @@ export default function Navbar() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="w-full h-20 bg-bg-gradientVioletNav px-3 ssm:h-12  sm:h-[6rem] ">
+      <div className="w-full h-12 bg-bg-gradientVioletNav px-3  sm:h-[6rem] ">
         <div className="w-full h-full flex items-center justify-between">
-          <div className="h-full flex items-center w-24 ssm:h-[92%]">
+          <div className="h-[92%] flex items-center w-24 ">
             <span className="h-full">
               <img src={darshLogo} className="w-full h-full object-cover"/>
             </span>
