@@ -6,7 +6,7 @@ export default function Navbar() {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="w-full h-16 bg-bg-gradientVioletNav px-3  sm:h-[6rem] ">
+      <div className="w-full h-24 bg-bg-gradientVioletNav px-3  sm:h-[6rem] ">
         <div className="w-full h-full flex items-center justify-between">
           <div className="h-[92%] flex items-center w-24 ">
             <span className="h-full">
