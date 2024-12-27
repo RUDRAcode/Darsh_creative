@@ -32,7 +32,7 @@ const About1 = () => {
                       alt=""
                       className="w-full rounded-2xl"
                     />
-                    <Dots/>
+                    <Dots />
                   </div>
                 </div>
               </div>
@@ -47,14 +47,16 @@ const About1 = () => {
                   Make your customers happy by giving services.
                 </h2>
                 <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, nesciunt provident officiis omnis quaerat ullam!
+                  Voluptatem obcaecati maxime quibusdam, animi, aliquam iste
+                  minus ducimus iusto minima corrupti eos debitis! Maxime
+                  dolorum omnis odio.
                 </p>
                 <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+                  amet itaque provident aliquid velit enim odio sed impedit et
+                  repellat.
                 </p>
                 <a
                   href="javascript:void(0)"

@@ -3,6 +3,7 @@ import Owl from "../assets/Owl.gif";
 import tiger from "../assets/tiger2.jpeg";
 import { useState } from "react";
 import { use } from "react"; 
+import Word from "./Word";
 // lg:h-[34rem]
 export default function OwlSide({ setOpen }) {
   const [touchStart, setTouchStart] = useState(null);
@@ -39,7 +40,7 @@ export default function OwlSide({ setOpen }) {
         className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] lg:w-[22rem]">
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col">
           <div className="w-60 h-60  absolute left-[12.5%] p-2 -top-[1%] mds:w-[16rem] mds:h-[16rem] mds:-top-[7%] mds:left-[14%] sm:w-[18rem] sm:h-[18rem] sm:left-[9%] sm:-top-[12%]">
-            <div className="w-full h-full rounded-full bg-bg-borderColor p-3 overflow-hidden">
+            <div className="w-full h-full rounded-full bg-bg-borderColor p-3 unselectable overflow-hidden">
               <div className="w-full h-full rounded-full">
                 <img src={Owl} className="rounded-full" />
               </div>
@@ -47,9 +48,9 @@ export default function OwlSide({ setOpen }) {
           </div>
           <div className="w-full h-52" />
           <div className="w-full h-[39%] p-4">
-            <div className="w-full h-full flex flex-col">
-              <span className="text-6xl text-center text-violet-700 font-roboto -m-1">
-                DISCOVER
+            <div className="w-full h-full flex flex-col unselectable">
+              <span className="text-6xl relative text-violet-700 font-roboto ">
+                <Word word="DISCOVER"/>
               </span>
               <span className="text-5xl text-center text-violet-700 font-roboto ">
                 EXPLORE
@@ -60,16 +61,11 @@ export default function OwlSide({ setOpen }) {
             </div>
           </div>
           <div className="flex-1 px-3 flex items-end mds:px-5">
-            <div className="w-full h-16 bg-buttonViolet rounded-full flex justify-between p-2">
-              <div className="w-16 h-full bg-bg-JoinNowButton rounded-full flex items-center justify-center mds:w-12">
-                <span className="text-3xl text-white">
-                  <i class="fa-solid fa-play"></i>
-                </span>
-              </div>
-              <a href="https://www.instaowl.in/" target="_blank">
-                <div className="w-52 h-full flex justify-center items-center cursor-pointer mds:w-56">
-                  <span className="font-bold text-4xl text-white">
-                    JOIN NOW 
+            <div className="w-full h-16 bg-buttonViolet rounded-full flex justify-between p-2 transition-shadow duration-500 hover:shadow-3xl">
+              <a href="https://www.instaowl.in/" target="_blank" className="w-full h-full">
+                <div className="w-full h-full flex justify-center items-center cursor-pointer">
+                  <span className="font-bold text-3xl text-white">
+                    START LEARNING
                   </span>
                 </div>
               </a>

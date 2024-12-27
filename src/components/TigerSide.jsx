@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import tigerGif from "../assets/tigerGif.gif";
 import owl from "../assets/Owl.gif";
 import { useState } from "react";
+import Word from "./Word";
 
 export default function TigerSide({ setOpen }) {
   const [touchStart, setTouchStart] = useState(null);
@@ -14,9 +15,9 @@ export default function TigerSide({ setOpen }) {
   const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
 
   const onTouchEnd = (e) => {
-    const width=window.innerWidth
-    if (width >= 1024){
-      return
+    const width = window.innerWidth;
+    if (width >= 1024) {
+      return;
     }
     if (!touchStart || !touchEnd) return;
     const distance = touchStart - touchEnd;
@@ -43,40 +44,32 @@ export default function TigerSide({ setOpen }) {
       <div className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] ">
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col justify-between">
           <div className="w-60 h-60  absolute left-[12.5%] p-2 -top-[1%] mds:w-[16rem] mds:h-[16rem] mds:-top-[7%] mds:left-[14%] sm:w-[18rem] sm:h-[18rem] sm:left-[9%] sm:-top-[12%]">
-            <div className="w-full h-full rounded-full bg-bg-borderColor p-3 overflow-hidden">
+            <div className="w-full h-full rounded-full bg-bg-borderColor p-3 overflow-hidden unselectable">
               <div className="w-full h-full rounded-full">
                 <img src={tigerGif} className="rounded-full" />
               </div>
             </div>
           </div>
-          <div className="w-full h-52 mds:h-50" />
+          <div className="w-full h-60" />
           <div className="w-full h-[39%] p-4">
-            <div className="w-full h-full flex flex-col justify-end">
-              <span className="text-6xl text-center text-violet-700 font-roboto tracking-tighter -m-2 mds:text-7xl">
-                ENDLESS
+            <div className="w-full h-full flex flex-col justify-end unselectable">
+              <span className="text-6xl text-center text-violet-700 font-roboto">
+                <Word word="STREAM" />
               </span>
-              <span className="text-4xl text-center text-violet-700 font-roboto tracking-tighter -m-1 ">
-                ENTERTAINMENT
+              <span className="text-5xl text-center text-violet-700 font-roboto">
+                PLAY
               </span>
-              <span className="text-4xl text-center text-violet-700 font-roboto tracking-tighter -m-1">
-                ANYTIME
-              </span>
-              <span className="text-4xl text-center text-violet-700 font-roboto tracking-tighter -m-1">
-                ANYWHERE
+              <span className="text-5xl text-center text-violet-700 font-roboto">
+                ENJOY
               </span>
             </div>
           </div>
           <div className="flex-1 px-1 flex items-end sm:px-3 mds:px-3">
-            <div className="w-full h-16 bg-buttonViolet rounded-full flex justify-between p-2">
-              <div className="w-16 h-full bg-bg-JoinNowButton rounded-full flex items-center justify-center">
-                <span className="text-3xl text-white">
-                  <i class="fa-solid fa-play"></i>
-                </span>
-              </div>
-              <a href="https://darshoo.com/" target="_blank">
-                <div className="w-56 h-full flex justify-center items-center cursor-pointer mds:w-60">
-                  <span className="font-bold text-4xl text-white">
-                    ENTER NOW 
+            <div className="w-full h-16 bg-buttonViolet rounded-full flex justify-between p-2 transition-shadow duration-500 hover:shadow-3xl">
+              <a href="https://darshoo.com/" target="_blank" className="w-full h-full">
+                <div className="w-full h-full flex justify-center items-center cursor-pointer">
+                  <span className="font-bold text-3xl text-white">
+                    RELAX AND ENJOY
                   </span>
                 </div>
               </a>
