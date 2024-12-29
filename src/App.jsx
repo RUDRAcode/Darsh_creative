@@ -3,7 +3,7 @@ import "./App.css";
 import OwlSide from "./components/OwlSide";
 import TigerSide from "./components/TigerSide";
 import { AnimatePresence } from "motion/react";
-import About from "./components/About.jsx"
+import Service from "./components/Service.jsx"
 import Footer from "./components/Footer.jsx"
 import Navbar from "./components/Navbar.jsx"
 import drash from "./assets/darsh.png"
@@ -38,7 +38,7 @@ function App() {
           <TigerSide/>
         </div>
       </div>
-      <About/>
+      <Service/>
       <Footer/>
     </main>
   );

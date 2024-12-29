@@ -44,8 +44,7 @@ const Footer = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </span>
-                  <span>+012 (345) 678 99</span>
+                  </span> 
                 </p>
               </div>
             </div>
