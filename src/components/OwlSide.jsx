@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import Owl from "../assets/Owl.gif";
 import tiger from "../assets/tiger2.jpeg";
 import { useState } from "react";
-import { use } from "react"; 
+import { use } from "react";
 import Word from "./Word";
 // lg:h-[34rem]
 export default function OwlSide({ setOpen }) {
@@ -20,11 +20,11 @@ export default function OwlSide({ setOpen }) {
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipe;
     const isRightSwipe = distance < -minSwipe;
-    console.log(isLeftSwipe,isRightSwipe)
+    console.log(isLeftSwipe, isRightSwipe);
     if (isLeftSwipe) {
       setOpen(false);
     } else {
-      setOpen(true)
+      setOpen(true);
     }
   };
   return (
@@ -33,11 +33,17 @@ export default function OwlSide({ setOpen }) {
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: 100 }}
-      onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
       transition={{ type: "spring", stiffness: 200 }}
     >
-      <div
-        className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] lg:w-[22rem]">
+      <motion.div
+        className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] lg:w-[22rem]"
+        initial={{ y: 0 }}
+        animate={{ y: [0, -20, 0] }}
+        transition={{ duration: 0.5, repeatDelay: 10, repeat: Infinity }}
+      >
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col">
           <div className="w-60 h-60  absolute left-[12.5%] p-2 -top-[1%] mds:w-[16rem] mds:h-[16rem] mds:-top-[7%] mds:left-[14%] sm:w-[18rem] sm:h-[18rem] sm:left-[9%] sm:-top-[12%]">
             <div className="w-full h-full rounded-full bg-bg-borderColor p-3 unselectable overflow-hidden">
@@ -50,7 +56,7 @@ export default function OwlSide({ setOpen }) {
           <div className="w-full h-[39%] p-4">
             <div className="w-full h-full flex flex-col unselectable">
               <span className="text-6xl relative text-violet-700 font-roboto ">
-                <Word word="DISCOVER"/>
+                <Word word="DISCOVER" />
               </span>
               <span className="text-5xl text-center text-violet-700 font-roboto ">
                 EXPLORE
@@ -62,9 +68,13 @@ export default function OwlSide({ setOpen }) {
           </div>
           <div className="flex-1 px-3 flex items-end mds:px-5">
             <div className="w-full h-16 bg-buttonViolet rounded-full flex justify-between p-2 transition-shadow duration-500 hover:shadow-3xl">
-              <a href="https://www.instaowl.in/" target="_blank" className="w-full h-full">
+              <a
+                href="https://www.instaowl.in/"
+                target="_blank"
+                className="w-full h-full"
+              >
                 <div className="w-full h-full flex justify-center items-center cursor-pointer">
-                  <span className="font-bold text-3xl text-white">
+                  <span className="font-bold text-2xl text-white font-delius">
                     START LEARNING
                   </span>
                 </div>
@@ -94,7 +104,7 @@ export default function OwlSide({ setOpen }) {
             </span>
           </div>
         </motion.div> */}
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

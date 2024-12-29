@@ -41,7 +41,12 @@ export default function TigerSide({ setOpen }) {
       onTouchEnd={onTouchEnd}
       transition={{ type: "spring", stiffness: 200 }}
     >
-      <div className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] ">
+      <motion.div
+        className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] "
+        initial={{ y: 0 }}
+        animate={{ y: [0,-20 ,0]}}
+        transition={{ duration:0.5, repeatDelay:4, repeat: Infinity,}}
+      >
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col justify-between">
           <div className="w-60 h-60  absolute left-[12.5%] p-2 -top-[1%] mds:w-[16rem] mds:h-[16rem] mds:-top-[7%] mds:left-[14%] sm:w-[18rem] sm:h-[18rem] sm:left-[9%] sm:-top-[12%]">
             <div className="w-full h-full rounded-full bg-bg-borderColor p-3 overflow-hidden unselectable">
@@ -50,13 +55,13 @@ export default function TigerSide({ setOpen }) {
               </div>
             </div>
           </div>
-          <div className="w-full h-60" />
+          <div className="w-full h-52" />
           <div className="w-full h-[39%] p-4">
-            <div className="w-full h-full flex flex-col justify-end unselectable">
-              <span className="text-6xl text-center text-violet-700 font-roboto">
+            <div className="w-full h-full flex flex-col unselectable">
+              <span className="text-6xl relative text-violet-700 font-roboto ">
                 <Word word="STREAM" />
               </span>
-              <span className="text-5xl text-center text-violet-700 font-roboto">
+              <span className="text-5xl text-center text-violet-700 font-roboto ">
                 PLAY
               </span>
               <span className="text-5xl text-center text-violet-700 font-roboto">
@@ -66,9 +71,13 @@ export default function TigerSide({ setOpen }) {
           </div>
           <div className="flex-1 px-1 flex items-end sm:px-3 mds:px-3">
             <div className="w-full h-16 bg-buttonViolet rounded-full flex justify-between p-2 transition-shadow duration-500 hover:shadow-3xl">
-              <a href="https://darshoo.com/" target="_blank" className="w-full h-full">
+              <a
+                href="https://darshoo.com/"
+                target="_blank"
+                className="w-full h-full"
+              >
                 <div className="w-full h-full flex justify-center items-center cursor-pointer">
-                  <span className="font-bold text-3xl text-white">
+                  <span className="font-bold text-2xl text-white font-delius">
                     RELAX AND ENJOY
                   </span>
                 </div>
@@ -98,7 +107,7 @@ export default function TigerSide({ setOpen }) {
             </span>
           </div>
         </motion.div> */}
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

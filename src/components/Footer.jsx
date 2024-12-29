@@ -1,5 +1,5 @@
 import React from "react";
-import darshLogo from "../assets/DARSH_LOGO.png"
+import darshLogo from "../assets/DARSH_LOGO_2.png"
 
 const Footer = () => {
   return (
