@@ -77,7 +77,7 @@ export default function OwlSide({ setOpen }) {
                   <span className="h-full w-12 flex justify-center items-center text-2xl text-white border-2 rounded-full">
                   <i class="fa-solid fa-book"></i>
                   </span>
-                  <span className="font-bold text-2xl text-white font-delius">
+                  <span className="font-bold text-2xl text-white font-delius unselectable">
                     START LEARNING
                   </span>
                 </div>

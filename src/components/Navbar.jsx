@@ -28,7 +28,7 @@ export default function Navbar() {
                   <div className="w-40" />
                   <div className="w-60 h-12 rounded-full bg-bg-pinkToViolet flex items-center justify-center transition-shadow duration-500 hover:shadow-3xl">
                     <a href="https://www.instaowl.in/" target="_blank">
-                      <span className="text-2xl font-bold text-white unselectable">
+                      <span className="text-2xl font-bold text-white font-neon unselectable">
                         INSTA OWL
                       </span>
                     </a>
@@ -45,7 +45,7 @@ export default function Navbar() {
                   <div className="w-40" />
                   <div className="w-60 h-12 rounded-full bg-bg-pinkToViolet flex items-center justify-center transition-shadow duration-500 hover:shadow-3xl">
                     <a href="https://darshoo.com/" target="_blank">
-                      <span className="text-2xl font-bold text-white unselectable">
+                      <span className="text-2xl font-bold text-white unselectable font-neon">
                         DARSHOO
                       </span>
                     </a>

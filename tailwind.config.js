@@ -6,9 +6,7 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         delius: ["Delius", "cursive"],
-        atma: ["Atma", "system-ui"],
         neon: ["Atma", "serif"],
-        poppins: ["Atma", "serif"],
       },
       screens: {
         // tablet: "896px",
@@ -53,7 +51,8 @@ export default {
       backgroundImage: {
         "edu-pattern": "url('./src/assets/darsh.png')",
         "bg-gradientViolet":
-          " linear-gradient(0deg, rgba(40,36,126,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
+          " linear-gradient(0deg, rgba(22,7,65,1) 0%, rgba(38,19,111,1) 62%, rgba(59,20,166,1) 100%);",
+          "bg-gradientCards":"linear-gradient(0deg, rgba(20,19,85,1) 7%, rgba(31,27,108,1) 49%, rgba(51,32,113,1) 84%)",
         "bg-gradientVioletNav":
           " linear-gradient(180deg, rgba(12,11,66,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
         "bg-JoinNowButton":
