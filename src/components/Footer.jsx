@@ -1,21 +1,23 @@
 import React from "react";
-import darshLogo from "../assets/DARSH_LOGO_2.png";
+import darshLogo from "../assets/DARSH_LOGO.png"
 
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 pb-10 bg-bg-gradientVioletNav px-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <footer className="relative z-10 pb-10  px-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] unselectable">
+        <div className="absolute w-full h-full bg-bg-gradientViolet top-0 blur-[230px] -z-10 left-0"/>
         <div className="w-full">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-              <div className="mb-10 w-full">
-                <a href="/#" className="mb-6 inline-block max-w-[160px]">
+              <div className="w-full flex flex-col">
+                <a href="/#" className="mb-1 inline-block max-w-[160px]">
                   <img src={darshLogo} />
                 </a>
-                <p className="mb-7 text-base text-white">
+                <span className="text-2xl text-white font-delius">Drash Creative</span>
+                <span className="mt-7 text-base text-white flex items-end">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Explicabo, ipsum.
-                </p>
+                </span>
  
               </div>
             </div>

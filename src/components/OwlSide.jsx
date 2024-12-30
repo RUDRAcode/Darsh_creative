@@ -39,12 +39,12 @@ export default function OwlSide({ setOpen }) {
       transition={{ type: "spring", stiffness: 200 }}
     >
       <motion.div
-        className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] lg:w-[22rem]"
+        className="w-80 h-[30rem] flex flex-col bg-bg-gradientViolet rounded-3xl justify-between z-10 p-3 relative mds:w-[22rem] lg:w-[22rem]"
         initial={{ y: 0 }}
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 0.5, repeatDelay: 4, repeat: Infinity }}
       >
-        <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col">
+        <div className="w-full h-full flex flex-col">
           <div className="w-60 h-60  absolute left-[12.5%] p-2 -top-[1%] mds:w-[16rem] mds:h-[16rem] mds:-top-[7%] mds:left-[14%] sm:w-[18rem] sm:h-[18rem] sm:left-[9%] sm:-top-[12%]">
             <div className="w-full h-full rounded-full bg-bg-borderColor p-3 unselectable overflow-hidden">
               <div className="w-full h-full rounded-full">

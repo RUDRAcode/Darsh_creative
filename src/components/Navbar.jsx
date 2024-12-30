@@ -13,7 +13,7 @@ export default function Navbar() {
               <img src={darshLogo} className="w-full h-full"/>
             </span>
             <span className="text-3xl text-white font-delius">
-              Darsh Creative Pvt Ltd
+              Darsh Creative Pvt. Ltd.
             </span>
           </div>
           <div className="hidden xl:h-full xl:flex-1 xl:block xl:ml-auto">

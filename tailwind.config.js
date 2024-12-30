@@ -53,7 +53,7 @@ export default {
       backgroundImage: {
         "edu-pattern": "url('./src/assets/darsh.png')",
         "bg-gradientViolet":
-          " linear-gradient(0deg, rgba(22,7,65,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
+          " linear-gradient(0deg, rgba(40,36,126,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
         "bg-gradientVioletNav":
           " linear-gradient(180deg, rgba(12,11,66,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
         "bg-JoinNowButton":
