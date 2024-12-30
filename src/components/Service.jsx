@@ -1,8 +1,10 @@
+import { transform } from "motion/react";
 import React from "react";
+import drash from "../assets/darsh.png"
 
 const Service = () => {
   return (
-    <section className="pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section className="pb-12 pt-20 relative dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -76,7 +78,7 @@ const ServiceCard = ({ icon, title, details }) => {
   return (
     <>
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div className="mb-9 rounded-[20px] bg-white p-10 shadow-2 shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-3  md:px-7 xl:px-10">
+        <div className="mb-9 rounded-[20px] bg-white p-10 shadow-2 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-3  md:px-7 xl:px-10">
           <div className="mb-8 flex h-[70px] bg-blue-600 w-[70px] items-center justify-center rounded-2xl p-4">
             {icon}
           </div>

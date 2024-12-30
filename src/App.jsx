@@ -2,7 +2,7 @@ import { useState, React, Fragment } from "react";
 import "./App.css";
 import OwlSide from "./components/OwlSide";
 import TigerSide from "./components/TigerSide";
-import { AnimatePresence } from "motion/react";
+import { AnimatePresence, transform } from "motion/react";
 import Service from "./components/Service.jsx"
 import Footer from "./components/Footer.jsx"
 import Navbar from "./components/Navbar.jsx"
@@ -25,7 +25,7 @@ function App() {
       <div className="w-full h-svh flex flex-col relative">
       <Navbar/>
         <AnimatePresence>
-          <div className="min-h-[30rem]  lg:hidden"style={backgroundStyle}>
+          <div className="w-full h-full lg:hidden"style={backgroundStyle}>
             {open ? (
               <OwlSide setOpen={setOpen}  />
             ) : (
@@ -33,7 +33,7 @@ function App() {
             )}
           </div>
         </AnimatePresence>
-        <div className="hidden lg:flex lg:min-h-[37rem]" style={backgroundStyle}>
+        <div className="hidden lg:flex lg:min-h-full" style={backgroundStyle}>
           <OwlSide/>
           <TigerSide/>
         </div>

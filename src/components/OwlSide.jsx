@@ -42,7 +42,7 @@ export default function OwlSide({ setOpen }) {
         className="w-80 h-[30rem] flex flex-col justify-between z-10 p-3 relative mds:w-[22rem] lg:w-[22rem]"
         initial={{ y: 0 }}
         animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 0.5, repeatDelay: 10, repeat: Infinity }}
+        transition={{ duration: 0.5, repeatDelay: 4, repeat: Infinity }}
       >
         <div className="w-full h-full rounded-3xl bg-bg-gradientViolet flex flex-col">
           <div className="w-60 h-60  absolute left-[12.5%] p-2 -top-[1%] mds:w-[16rem] mds:h-[16rem] mds:-top-[7%] mds:left-[14%] sm:w-[18rem] sm:h-[18rem] sm:left-[9%] sm:-top-[12%]">
@@ -55,13 +55,13 @@ export default function OwlSide({ setOpen }) {
           <div className="w-full h-52" />
           <div className="w-full h-[39%] p-4">
             <div className="w-full h-full flex flex-col unselectable">
-              <span className="text-6xl relative text-violet-700 font-roboto ">
+              <span className="text-6xl relative text-violet-700 font-delius ">
                 <Word word="DISCOVER" />
               </span>
-              <span className="text-5xl text-center text-violet-700 font-roboto ">
+              <span className="text-5xl text-center text-violet-700 font-delius ">
                 EXPLORE
               </span>
-              <span className="text-5xl text-center text-violet-700 font-roboto">
+              <span className="text-5xl text-center text-violet-700 font-delius">
                 ACHIEVE!
               </span>
             </div>
@@ -73,7 +73,10 @@ export default function OwlSide({ setOpen }) {
                 target="_blank"
                 className="w-full h-full"
               >
-                <div className="w-full h-full flex justify-center items-center cursor-pointer">
+                <div className="w-full h-full flex justify-between items-center cursor-pointer px-2">
+                  <span className="h-full w-12 flex justify-center items-center text-2xl text-white border-2 rounded-full">
+                  <i class="fa-solid fa-book"></i>
+                  </span>
                   <span className="font-bold text-2xl text-white font-delius">
                     START LEARNING
                   </span>

@@ -21,6 +21,8 @@ export default {
         blackBLue: "#0e1a34",
         buttonViolet: "#6600fd",
         cyan: "#22d3ee",
+        yellow_ocare:"#f8f3ef",
+        gray:"#333 "
       },
       keyframes: {
         neon_animation: {
@@ -46,6 +48,7 @@ export default {
       },
       boxShadow:{
         '3xl':"0 0 40px -8px #67e8f9",
+        "4xl":"inset 0 0 0 220px rgba(255,255,255,0.3);"
       },
       backgroundImage: {
         "edu-pattern": "url('./src/assets/darsh.png')",
@@ -55,6 +58,7 @@ export default {
           " linear-gradient(180deg, rgba(22,7,65,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
         "bg-JoinNowButton":
           " linear-gradient(16deg, rgba(40,36,126,1) 0%, rgba(82,9,235,1) 62%);",
+        "bg-Service":"linear-gradient(180deg, rgba(12,11,66,1) 7%, rgba(15,12,69,1) 49%, rgba(33,15,93,1) 84%)",
         "bg-borderColor":
           "linear-gradient(0deg, rgba(107,5,255,1) 0%, rgba(66,120,212,1) 62%, rgba(64,179,254,1) 100%)",
         "bg-HamburgerMenu":

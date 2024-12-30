@@ -8,9 +8,12 @@ export default function Navbar() {
     <>
       <div className="w-full h-24 bg-bg-gradientVioletNav px-3  sm:h-[6rem] ">
         <div className="w-full h-full flex items-center justify-between">
-          <div className="h-[92%] flex items-center w-24">
-            <span className="h-full">
+          <div className="h-[92%] flex items-center w-[41rem]">
+            <span className="w-32 h-full p-2">
               <img src={darshLogo} className="w-full h-full"/>
+            </span>
+            <span className="text-3xl text-white font-delius">
+              DARSH CREATIVE PRIVATE LIMITED
             </span>
           </div>
           <div className="hidden xl:h-full xl:flex-1 xl:block xl:ml-auto">
