@@ -55,7 +55,7 @@ export default {
         "bg-gradientViolet":
           " linear-gradient(0deg, rgba(22,7,65,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
         "bg-gradientVioletNav":
-          " linear-gradient(180deg, rgba(22,7,65,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
+          " linear-gradient(180deg, rgba(12,11,66,1) 0%, rgba(38,19,111,1) 62%, rgba(59,4,166,1) 100%);",
         "bg-JoinNowButton":
           " linear-gradient(16deg, rgba(40,36,126,1) 0%, rgba(82,9,235,1) 62%);",
         "bg-Service":"linear-gradient(180deg, rgba(12,11,66,1) 7%, rgba(15,12,69,1) 49%, rgba(33,15,93,1) 84%)",
