@@ -16,7 +16,6 @@ function App() {
     backgroundImage: `url(${drash})`,
     backgroundSize: 'cover',  
     backgroundRepeat: 'no-repeat', 
-    backgroundPosition: 'center', 
     height: '100%', 
     width: '100%', 
   }
