@@ -21,11 +21,11 @@ function App() {
     width: '100%', 
   }
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden" style={backgroundStyle}>
       <div className="w-full h-svh flex flex-col relative">
       <Navbar/>
         <AnimatePresence>
-          <div className="w-full h-full lg:hidden"style={backgroundStyle}>
+          <div className="w-full h-full lg:hidden">
             {open ? (
               <OwlSide setOpen={setOpen}  />
             ) : (
@@ -33,7 +33,7 @@ function App() {
             )}
           </div>
         </AnimatePresence>
-        <div className="hidden lg:flex lg:min-h-full" style={backgroundStyle}>
+        <div className="hidden lg:flex lg:min-h-full">
           <OwlSide/>
           <TigerSide/>
         </div>

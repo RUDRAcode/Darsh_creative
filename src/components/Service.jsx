@@ -12,10 +12,10 @@ const Service = () => {
               <span className="mb-2 block text-lg font-semibold text-violet-600">
                 Our Services
               </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark font-delius sm:text-4xl md:text-[40px]">
+              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-white font-delius sm:text-4xl md:text-[40px]">
                 What We Offer
               </h2>
-              <p className="text-lg text-body-color">
+              <p className="text-lg text-white">
                 At Darsh Creatives, we envision a world where technology and
                 creativity seamlessly merge to enrich lives and inspire minds.
               </p>
