@@ -13,7 +13,7 @@ const Footer = () => {
                 <a href="/#" className="mb-1 inline-block max-w-[160px]">
                   <img src={darshLogo} />
                 </a>
-                <span className="text-2xl text-white font-delius">Drash Creative</span>
+                <span className="text-2xl text-white font-delius">Darsh Creative</span>
                 <span className="mt-7 text-base text-white flex items-end">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Explicabo, ipsum.
